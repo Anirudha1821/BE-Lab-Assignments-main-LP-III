@@ -36,5 +36,4 @@ min_x = gradient_descent(starting_x, learning_rate, num_iterations)
 print(f"Local minimum occurs at x = {min_x}")
 
 import seaborn as sns
-
 sns.scatterplot(gd)

@@ -30,7 +30,7 @@ X_test = scaler.transform(x_test)
 # we use only transform on xtest as it uses the same mean and SD learned from the training set
 
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.layers import Dense
 
 model = Sequential()
 
