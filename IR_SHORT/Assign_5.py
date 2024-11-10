@@ -15,6 +15,7 @@ def crawl(url, depth, visited=set()):
         response = requests.get(url)
         response.raise_for_status()  # Check if the request was successful
         soup = BeautifulSoup(response.text, 'html.parser')
+        
         # Extract all links
         for link in soup.find_all('a', href=True):
             href = link['href']
